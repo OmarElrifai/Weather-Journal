@@ -24,7 +24,7 @@ app.use(express.static('website'));
 
 
 // Setup Server
-app.listen(3000, function() {
+app.listen(process.env.PORT || 3000, function() {
     console.log('server connected on port:3000')
 });
 
